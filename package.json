@@ -6,26 +6,28 @@
   "description": "",
   "sideEffects": false,
   "license": "",
-  "author": {
-    "name": "sushichan044",
-    "url": "https://github.com/sushichan044"
+  "keywords": [],
+  "homepage": "https://github.com/sushichan044/template-ts-lib-polyrepo#readme",
+  "bugs": {
+    "url": "https://github.com/sushichan044/template-ts-lib-polyrepo/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sushichan044/template-ts-lib-polyrepo.git"
+  },
+  "author": {
+    "name": "sushichan044",
+    "url": "https://github.com/sushichan044"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/",
     "provenance": true
   },
-  "bugs": {
-    "url": "https://github.com/sushichan044/template-ts-lib-polyrepo/issues"
-  },
+  "funding": "https://github.com/sponsors/sushichan044",
   "engines": {
-    "node": "^20.12.0 || ^22.0.0 || >=24.0.0"
+    "node": ">=20.19.0"
   },
-  "keywords": [],
   "files": ["dist"],
   "exports": {
     ".": {
