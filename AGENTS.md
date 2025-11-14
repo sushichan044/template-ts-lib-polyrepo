@@ -1,5 +1,9 @@
 # AGENTS.md
 
+## Agent Workflow
+
+YOU MUST CHECK `pnpm run check` passing before finishing any task.
+
 ## Project Context
 
 ### Overview
@@ -22,82 +26,9 @@ TBD
 
 ## Development Environment
 
-### Runtime & Package Manager
-
-- **Node.js**: v24 (specified in `.node-version`)
-- **Package Manager**: pnpm v10.14.0
-- **Minimum Node Version**: >=20.19.0 (engines in `package.json`)
-
-### TypeScript Configuration
-
-- **Base Config**: `@virtual-live-lab/tsconfig/base`
-- **Module System**: ESM with `preserve` mode
-- **Module Resolution**: bundler
-- **Types**: node
-- **Plugins**: eslint-plugin-import-access for TypeScript plugin
-
-### Code Quality Tools
-
-#### Linter
-
-- **ESLint** v9.38.0 with Flat Config
-- **Preset**: `@virtual-live-lab/eslint-config/presets/ts`
-- **Plugins**:
-  - typescript-eslint v8.46.2
-  - eslint-plugin-import-access v3.0.0 (enforces JSDoc-based import access control)
-  - unplugin-unused v0.5.4
-- **Import Access Rule**: Enforced with `error` level for `.ts` files
-
-#### Formatter
-
-- **Biome** v2.3.1 (formatter only, linter disabled)
-- **Config**:
-  - Indent: 2 spaces
-  - Line Width: 80
-  - Line Ending: LF
-  - Quotes: Double quotes
-  - Semicolons: Always
-  - Trailing Commas: All (except JSON files)
-  - Arrow Parens: Always
-  - VCS Integration: Git
-
-#### Type Checking
-
-- **typescript** v5.9.3
-- **@arethetypeswrong/core** v0.18.2 for package type validation
-
-### Testing
-
-- **Vitest** v4.0.4
-- **Vite** v7.1.12
-- **Config**: `vitest.config.ts`
-
-### Build
-
-- **Bundler**: tsdown v0.15.11
-- **Config**: `tsdown.config.ts`
-- **Output**: `dist/` directory
-- **Entry Point**: `./dist/index.mjs` (ESM only)
-- **Types**: `./dist/index.d.mts`
-
-### Package Publishing
-
-- **Registry**: npm (public access)
-- **Provenance**: Enabled
-- **Validation Tools**:
-  - publint v0.3.15
-  - @arethetypeswrong/core
-- **Release Management**:
-  - release-it v19.0.5
-  - release-it-pnpm v4.6.6
-  - Config: `.release-it.json`
-
-### CI/CD Integration
-
-- **pkg-pr-new** v0.0.60 for preview package publishing
-- **Publish Mode**: Compact with update comments
-
 ### Available Scripts
+
+In most case you just run `pnpm run check` to run all checks.
 
 ```bash
 pnpm lint          # ESLint with auto-fix
@@ -106,7 +37,6 @@ pnpm format:check  # Biome format check (GitHub reporter)
 pnpm typecheck     # TypeScript type checking
 pnpm test          # Run Vitest tests
 pnpm build         # Build with tsdown
-pnpm pkg-pr-new    # Publish preview package
 ```
 
 ### Development Workflow
