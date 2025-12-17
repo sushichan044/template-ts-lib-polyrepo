@@ -2,10 +2,7 @@
   "name": "template-ts-lib-polyrepo",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "description": "",
-  "sideEffects": false,
-  "license": "",
   "keywords": [],
   "homepage": "https://github.com/sushichan044/template-ts-lib-polyrepo#readme",
   "bugs": {
@@ -19,23 +16,19 @@
     "name": "sushichan044",
     "url": "https://github.com/sushichan044"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
   "funding": "https://github.com/sponsors/sushichan044",
-  "engines": {
-    "node": ">=20.19.0"
-  },
-  "files": [
-    "dist"
-  ],
+  "license": "",
+  "sideEffects": false,
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
       "import": "./dist/index.mjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint": "eslint --max-warnings 0 --fix",
     "lint:check": "eslint --max-warnings 0",
@@ -48,7 +41,6 @@
     "prepublishOnly": "pnpm run build",
     "pkg-pr-new": "pkg-pr-new publish --compact --comment=update --pnpm"
   },
-  "packageManager": "pnpm@10.23.0",
   "devDependencies": {
     "@arethetypeswrong/core": "catalog:dev",
     "@types/node": "catalog:dev",
@@ -68,5 +60,13 @@
     "unplugin-unused": "catalog:dev",
     "vite": "catalog:dev",
     "vitest": "catalog:dev"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
