@@ -43,7 +43,6 @@
     "test": "vitest --run",
     "check": "pnpm run format:check && pnpm run typecheck && pnpm run lint:check && pnpm run test && pnpm run build",
     "build": "tsdown",
-    "prepublishOnly": "pnpm run build",
     "pkg-pr-new": "pkg-pr-new publish --compact --comment=update --pnpm"
   },
   "devDependencies": {
@@ -63,7 +62,6 @@
     "typescript": "catalog:dev",
     "typescript-eslint": "catalog:dev",
     "unplugin-unused": "catalog:dev",
-    "vite": "catalog:dev",
     "vitest": "catalog:dev"
   },
   "engines": {
