@@ -16,6 +16,5 @@
       "mode": "auto"
     }
   ],
-  "prettier.enable": false,
   "js/ts.experimental.useTsgo": true
 }
