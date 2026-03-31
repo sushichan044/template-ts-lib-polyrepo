@@ -14,6 +14,6 @@ catalogs:
     release-it-pnpm: ^4.6.6
     tsdown: 0.21.7
     typescript: ^6.0.2
-    typescript-eslint: ^8.58.0
+    typescript-eslint: ^8.57.2
     unplugin-unused: ^0.5.7
     vitest: ^4.1.2
