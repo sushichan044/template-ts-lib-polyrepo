@@ -41,8 +41,5 @@ jobs:
       - name: Run oxfmt
         run: pnpm run format:check
 
-      - name: Run typecheck
-        run: pnpm run typecheck
-
       - name: Run test
         run: pnpm run test

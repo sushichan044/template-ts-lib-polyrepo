@@ -39,9 +39,9 @@
     "lint:check": "oxlint --max-warnings 0",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
-    "typecheck": "tsgo --noEmit",
     "test": "vitest --run",
-    "check": "pnpm run format:check && pnpm run typecheck && pnpm run lint:check && pnpm run test && pnpm run build",
+    "tidy": "pnpm run lint && pnpm run format && pnpm run test",
+    "check": "pnpm run format:check && pnpm run lint:check && pnpm run test && pnpm run build",
     "build": "tsdown",
     "pkg-pr-new": "pkg-pr-new publish --compact --comment=update --pnpm"
   },
@@ -50,9 +50,9 @@
     "@types/node": "catalog:dev",
     "@typescript/native-preview": "catalog:dev",
     "@virtual-live-lab/tsconfig": "catalog:dev",
-    "eslint-plugin-import-access": "catalog:dev",
     "oxfmt": "catalog:dev",
     "oxlint": "catalog:dev",
+    "oxlint-tsgolint": "catalog:dev",
     "pkg-pr-new": "catalog:dev",
     "publint": "catalog:dev",
     "release-it": "catalog:dev",
@@ -61,9 +61,6 @@
     "typescript": "catalog:dev",
     "unplugin-unused": "catalog:dev",
     "vitest": "catalog:dev"
-  },
-  "engines": {
-    "node": ">=20.19.0"
   },
   "packageManager": "pnpm@10.33.0"
 }
