@@ -35,8 +35,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "lint": "eslint --max-warnings 0 --fix",
-    "lint:check": "eslint --max-warnings 0",
+    "lint": "oxlint --max-warnings 0 --fix",
+    "lint:check": "oxlint --max-warnings 0",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
     "typecheck": "tsgo --noEmit",
@@ -49,23 +49,21 @@
     "@arethetypeswrong/core": "catalog:dev",
     "@types/node": "catalog:dev",
     "@typescript/native-preview": "catalog:dev",
-    "@virtual-live-lab/eslint-config": "catalog:dev",
     "@virtual-live-lab/tsconfig": "catalog:dev",
-    "eslint": "catalog:dev",
     "eslint-plugin-import-access": "catalog:dev",
     "oxfmt": "catalog:dev",
+    "oxlint": "catalog:dev",
     "pkg-pr-new": "catalog:dev",
     "publint": "catalog:dev",
     "release-it": "catalog:dev",
     "release-it-pnpm": "catalog:dev",
     "tsdown": "catalog:dev",
     "typescript": "catalog:dev",
-    "typescript-eslint": "catalog:dev",
     "unplugin-unused": "catalog:dev",
     "vitest": "catalog:dev"
   },
   "engines": {
     "node": ">=20.19.0"
   },
-  "packageManager": "pnpm@10.23.0"
+  "packageManager": "pnpm@10.33.0"
 }
