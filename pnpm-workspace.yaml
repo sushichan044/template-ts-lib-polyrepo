@@ -4,8 +4,8 @@ catalogs:
     '@types/node': ^25.6.0
     '@typescript/native-preview': 7.0.0-dev.20260410.1
     '@virtual-live-lab/tsconfig': ^2.1.21
-    oxfmt: ^0.43.0
-    oxlint: ^1.59.0
+    oxfmt: ^0.45.0
+    oxlint: ^1.60.0
     oxlint-tsgolint: ^0.20.0
     pkg-pr-new: ^0.0.66
     publint: ^0.3.18
