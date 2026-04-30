@@ -1,4 +1,5 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["pnpm-*.yaml", "CHANGELOG.md"]
+  "ignorePatterns": ["pnpm-*.yaml", "CHANGELOG.md"],
+  "jsdoc": true
 }
