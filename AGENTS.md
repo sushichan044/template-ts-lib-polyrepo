@@ -1,38 +1,9 @@
 # AGENTS.md
 
-## Agent Workflow
+## Script
 
-YOU MUST CHECK `pnpm run check` passing before finishing any task.
-
-## Project Context
-
-### Overview
-
-TBD
-
-### Architecture
-
-TBD
-
-### Key Features
-
-TBD
-
-### Design Decisions
-
-TBD
-
----
-
-## Development Environment
-
-### Available Scripts
-
-```bash
-pnpm lint          # ESLint with auto-fix
-pnpm format        # oxfmt format with write
-pnpm format:check  # oxfmt format check
-pnpm typecheck     # TypeScript type checking
-pnpm test          # Run Vitest tests
-pnpm build         # Build with tsdown
-```
+- `pnpm run lint`: type-check and lint
+- `pnpm run format`: format code
+- `pnpm run test`: run tests
+- `pnpm run build`: build the artifact
+- `pnpm run check`: run all checks. must pass before ending any tasks.

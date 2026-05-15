@@ -40,7 +40,6 @@
     "format": "oxfmt",
     "format:check": "oxfmt --check",
     "test": "vitest --run",
-    "tidy": "pnpm run lint && pnpm run format && pnpm run test",
     "check": "pnpm run format:check && pnpm run lint:check && pnpm run test && pnpm run build",
     "build": "tsdown",
     "pkg-pr-new": "pkg-pr-new publish --compact --comment=update --pnpm"
