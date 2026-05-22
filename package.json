@@ -35,13 +35,10 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "lint": "oxlint --max-warnings 0 --fix",
-    "lint:check": "oxlint --max-warnings 0",
-    "format": "oxfmt",
-    "format:check": "oxfmt --check",
-    "test": "vitest --run",
-    "check": "pnpm run format:check && pnpm run lint:check && pnpm run test && pnpm run build",
-    "build": "tsdown",
+    "check": "vp check",
+    "tidy": "vp check --fix",
+    "test": "vp test --run",
+    "build": "vp pack",
     "pkg-pr-new": "pkg-pr-new publish --compact --comment=update --pnpm"
   },
   "devDependencies": {
@@ -49,17 +46,13 @@
     "@types/node": "catalog:dev",
     "@typescript/native-preview": "catalog:dev",
     "@virtual-live-lab/tsconfig": "catalog:dev",
-    "oxfmt": "catalog:dev",
-    "oxlint": "catalog:dev",
-    "oxlint-tsgolint": "catalog:dev",
     "pkg-pr-new": "catalog:dev",
     "publint": "catalog:dev",
     "release-it": "catalog:dev",
     "release-it-pnpm": "catalog:dev",
-    "tsdown": "catalog:dev",
     "typescript": "catalog:dev",
     "unplugin-unused": "catalog:dev",
-    "vitest": "catalog:dev"
+    "vite-plus": "catalog:dev"
   },
   "packageManager": "pnpm@11.2.2"
 }

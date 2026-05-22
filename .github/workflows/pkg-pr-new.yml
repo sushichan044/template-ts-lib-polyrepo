@@ -39,11 +39,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Node.js and pnpm
-        uses: ./.github/actions/setup-node-pnpm
+      - uses: ./.github/actions/setup-env
 
       - name: Build
-        run: pnpm build
+        run: pnpm run build
 
       - name: Publish
         run: pnpm run pkg-pr-new

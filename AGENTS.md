@@ -2,8 +2,11 @@
 
 ## Script
 
-- `pnpm run lint`: type-check and lint
-- `pnpm run format`: format code
-- `pnpm run test`: run tests
-- `pnpm run build`: build the artifact
-- `pnpm run check`: run all checks. must pass before ending any tasks.
+- `pnpm run check`: Run formatter, linter, type checker.
+- `pnpm run tidy`: Run formatter, linter, type checker with auto-fix where possible.
+- `pnpm run test`: Run tests.
+- `pnpm run build`: Build the artifact.
+
+## Coding
+
+- Vitest: `globals: true`. DO NOT IMPORT Vitest APIs.

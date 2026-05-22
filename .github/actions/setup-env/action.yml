@@ -1,5 +1,5 @@
-name: Setup Node.js
-description: Setup Node.js and pnpm
+name: Setup env
+description: Setup development environment for CI workflows
 
 inputs:
   registry-url:
@@ -19,6 +19,11 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: Setup vite-plus
+      uses: voidzero-dev/setup-vp@ca1c46663915d6c1042ae23bd39ab85718bfb0fa # v1.10.0
+      with:
+        run-install: false
+
     - name: Setup Node.js with node version
       if: ${{ inputs.node-version != '' }}
       id: setup-node-with-version
