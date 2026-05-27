@@ -2,14 +2,14 @@ import { defineConfig } from "vite-plus";
 
 export default defineConfig({
   fmt: {
-    ignorePatterns: ["pnpm-*.yaml", "CHANGELOG.md"],
+    ignorePatterns: ["pnpm-lock.yaml", "CHANGELOG.md"],
     jsdoc: true,
     sortImports: true,
   },
   lint: {
     jsPlugins: ["vite-plus/oxlint-plugin"],
     categories: {
-      correctness: "off",
+      correctness: "error",
       nursery: "error",
       perf: "error",
     },
