@@ -42,7 +42,7 @@ jobs:
       - uses: ./.github/actions/setup-env
 
       - name: Build
-        run: pnpm run build
+        run: vp pack
 
       - name: Publish
-        run: pnpm run pkg-pr-new
+        run: vp run pkg-pr-new

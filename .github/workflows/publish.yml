@@ -36,12 +36,12 @@ jobs:
 
       - uses: ./.github/actions/setup-env
 
-      - run: pnpm run build
+      - run: vp pack
 
       - name: Setup latest npm to use trusted publish
         run: |
           npm install -g npm@latest
 
-      - run: pnpm exec release-it
+      - run: vp exec release-it
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
