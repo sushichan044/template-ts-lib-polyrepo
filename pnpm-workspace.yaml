@@ -16,6 +16,6 @@ catalogs:
     vite-plus: 0.2.1
 
 configDependencies:
-  '@pnpm/pacquet': 0.11.12
+  "@pnpm/pacquet": 0.11.12
 
 saveExact: true
