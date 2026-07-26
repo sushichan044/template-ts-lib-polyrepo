@@ -41,7 +41,6 @@
   "devDependencies": {
     "@arethetypeswrong/core": "catalog:dev",
     "@types/node": "catalog:dev",
-    "@typescript/native-preview": "catalog:dev",
     "@virtual-live-lab/tsconfig": "catalog:dev",
     "pkg-pr-new": "catalog:dev",
     "publint": "catalog:dev",
@@ -51,5 +50,5 @@
     "unplugin-unused": "catalog:dev",
     "vite-plus": "catalog:dev"
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@11.17.0"
 }
