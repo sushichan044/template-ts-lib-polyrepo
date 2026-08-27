@@ -12,6 +12,6 @@ catalogs:
     release-it-pnpm: 4.6.6
     typescript: 7.0.2
     unplugin-unused: 0.6.0
-    vite-plus: 0.2.8
+    vite-plus: 0.3.0
 
 saveExact: true

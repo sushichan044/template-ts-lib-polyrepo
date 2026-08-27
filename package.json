@@ -50,5 +50,5 @@
     "unplugin-unused": "catalog:dev",
     "vite-plus": "catalog:dev"
   },
-  "packageManager": "pnpm@11.17.0"
+  "packageManager": "pnpm@11.24.0"
 }
