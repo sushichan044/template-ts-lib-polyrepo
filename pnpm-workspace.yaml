@@ -15,3 +15,10 @@ catalogs:
     vite-plus: 1.1.0
 
 saveExact: true
+overrides:
+  vite@*: catalog:dev
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"

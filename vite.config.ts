@@ -77,7 +77,7 @@ export default defineConfig({
     attw: { level: "error", profile: "esm-only" },
     clean: true,
     dts: {
-      tsgo: true,
+      generator: "tsgo",
     },
     entry: [],
     fixedExtension: true,
